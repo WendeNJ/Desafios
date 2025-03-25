@@ -23,7 +23,7 @@ Este projeto realiza web scraping para buscar os links dos anexos no site da ANS
    git clone https://github.com/WendeNJ/Desafios.git
    cd Desafios/Desafio1
 
-   ## 📂 Estrutura do Projeto
+   
 
 
 ---
