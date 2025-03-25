@@ -23,20 +23,20 @@ Este projeto realiza web scraping para buscar os links dos anexos no site da ANS
    git clone https://github.com/WendeNJ/Desafios.git
    cd Desafios/Desafio1
 
-   📂 Estrutura do projeto
-kotlin
-Copiar
-Editar
-Desafio1/
-│── src/
-│   ├── Metodos/
-│   │   ├── Consultas.java        # Obtém os links dos PDFs no site
-│   │   ├── Downloads.java        # Faz o download dos arquivos
-│   │   ├── Compactacao.java      # Compacta os PDFs em um ZIP
-│   ├── Program/
-│   │   ├── ProgramaPrincipal.java # Orquestra todas as funções
-│── anexo/   # Pasta onde os PDFs e o ZIP serão salvos
-⚠ Observações
+   ## 📂 Estrutura do Projeto
+
+
+---
+
+### Detalhes:
+
+- **src/Metodos/Consultas.java**: Realiza o scraping e obtém os links dos arquivos PDF da página da ANS.
+- **src/Metodos/Downloads.java**: Baixa os arquivos PDF encontrados.
+- **src/Metodos/Compactacao.java**: Compacta os PDFs baixados em um arquivo ZIP.
+- **src/Program/ProgramaPrincipal.java**: Executa todas as funções descritas acima, orquestrando o processo completo.
+- **anexo/**: Diretório onde os PDFs e o arquivo ZIP resultante são salvos.
+
+---
 Caso os links dos anexos mudem no site da ANS, pode ser necessário ajustar o código.
 
 Certifique-se de ter o JSoup configurado no seu projeto para o scraping funcionar corretamente.
