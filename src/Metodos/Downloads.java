@@ -24,7 +24,7 @@ public class Downloads {
 		
 		InputStream inputStream = url.openStream();
 		
-		FileOutputStream fos = new FileOutputStream( diretorio + "/" + nomeArquivo);
+		FileOutputStream fos = new FileOutputStream( diretorio + File.separator + nomeArquivo);
 		
 		byte[] buffer = new byte[4096];
 		int bytesRead;
