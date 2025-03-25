@@ -27,7 +27,8 @@ Este projeto realiza web scraping para buscar os links dos anexos no site da ANS
 
 
 ---
-
+  ## 📂 Estrutura do Projeto
+  
 ### Detalhes:
 
 - **src/Metodos/Consultas.java**: Realiza o scraping e obtém os links dos arquivos PDF da página da ANS.
