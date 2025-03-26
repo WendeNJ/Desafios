@@ -56,4 +56,22 @@ GROUP BY r.Razao_Social
 ORDER BY total_despesa DESC
 LIMIT 10;
 
+-- Importacao do Arquivo csv dos ultimos 2 anos
+-- Para a importacao dos outros 7 arquivos fiz somente a mudanca no nome do arquivo.csv (2T,3T,4T) 
+-- e assim sucessivamente
 
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/1T2023.csv'
+INTO TABLE demonstracoes_contabeis
+FIELDS TERMINATED BY ';' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(@data, reg_ans, cd_conta_contabil, descricao, @vl_saldo_inicial, @vl_saldo_final)
+SET 
+    data = STR_TO_DATE(@data, '%Y-%m-%d'),
+    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
+    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.');
+
+
+
+-- OPTEI POR NAO FAZER AUTOMACAO
