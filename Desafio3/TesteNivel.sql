@@ -8,7 +8,7 @@ CREATE TABLE `demonstracoes_contabeis` (
   `vl_saldo_final` decimal(15,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-Criacao tabela relatorio 
+--Criacao tabela relatorio 
 CREATE TABLE `relatorio` (
   `Registro_ANS` int DEFAULT NULL,
   `CNPJ` bigint DEFAULT NULL,
