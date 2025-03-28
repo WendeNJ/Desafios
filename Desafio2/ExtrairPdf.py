@@ -8,7 +8,7 @@ import pandas as pd
 warnings.filterwarnings("ignore")
 
 
-mapeamento_abreviacoes = {
+Substituir_abreviacoes = {
     "OD": "Seg.Odontologico",
     "AMB": "Seg.Ambulatorial"
 }
@@ -55,8 +55,8 @@ df_final = df_final.iloc[:, :13]
 df_final = df_final.applymap(lambda x: re.sub(r' :+', ',', str(x)) if isinstance(x, str) else x)
 
 
-df_final["OD"] = df_final["OD"].map(mapeamento_abreviacoes).fillna(df_final["OD"])
-df_final["AMB"] = df_final["AMB"].map(mapeamento_abreviacoes).fillna(df_final["AMB"])
+df_final["OD"] = df_final["OD"].map(Substituir_abreviacoes).fillna(df_final["OD"])
+df_final["AMB"] = df_final["AMB"].map(Substituir_abreviacoes).fillna(df_final["AMB"])
 
 
 df_final.to_csv("Teste_Wenderson.csv", index=False, sep=";")
