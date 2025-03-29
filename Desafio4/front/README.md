@@ -1,24 +1,33 @@
-# front
+# Frontend Vue.js - Busca de Operadoras
 
-## Project setup
-```
-npm install
-```
+## Sobre
+Este projeto consiste em um front-end bem simples desenvolvido em Vue.js para buscar operadoras de saúde pelo Registro ANS, consumindo uma API Flask.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Requisitos
+- Node.js
+- Vue.js
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Instalação
+1. Instale o Vue CLI caso não tenha:
+   ```sh
+   npm install -g @vue/cli
+   ```
+2. Clone o repositório e entre na pasta do projeto Vue:
+   ```sh
+   git clone <repo-url>
+   cd <pasta-do-projeto>
+   ```
+3. Instale as dependências do projeto:
+   ```sh
+   npm install
+   ```
+4. Execute a aplicação Vue.js:
+   ```sh
+   npm run serve
+   ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Uso
+- Acesse `http://localhost:8080` para utilizar a interface gráfica.
+- Digite o `Registro ANS` e clique em **Buscar** para consultar a operadora.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
