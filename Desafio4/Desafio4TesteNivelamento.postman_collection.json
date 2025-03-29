@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "c1c8af4f-f922-4655-8d4d-015a035de9f3",
+		"name": "Desafio4TesteNivelamento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41309963"
+	},
+	"item": [
+		{
+			"name": "Desafio4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?Registro_ANS=421421",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "Registro_ANS",
+							"value": "421421"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/search?Registro_ANS=421421",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "Registro_ANS",
+									"value": "421421"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.13.2"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Mar 2025 04:52:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "626"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Bairro\": \"CENTRO\",\n    \"CEP\": \"13010151\",\n    \"CNPJ\": \"27452545000195\",\n    \"Cargo_Representante\": \"REPRESENTANTE\",\n    \"Cidade\": \"Campinas\",\n    \"Complemento\": \"1º ANDAR\",\n    \"DDD\": \"19\",\n    \"Data_Registro_ANS\": \"2018-10-09\",\n    \"Endereco_eletronico\": \"ans.plano@hospitalcare.com.br\",\n    \"Fax\": \"\",\n    \"Logradouro\": \"RUA: BERNARDINO DE CAMPOS\",\n    \"Modalidade\": \"Medicina de Grupo\",\n    \"Nome_Fantasia\": \"\",\n    \"Numero\": \"230\",\n    \"Razao_Social\": \"2CARE OPERADORA DE SAÚDE LTDA.\",\n    \"Regiao_de_Comercializacao\": \"5\",\n    \"Registro_ANS\": \"421421\",\n    \"Representante\": \"RODRIGO PINHO RIBEIRO\",\n    \"Telefone\": \"37901224\",\n    \"UF\": \"SP\"\n}"
+				},
+				{
+					"name": "Desafio4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/search?Registro_ANS=421421",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "Registro_ANS",
+									"value": "421421"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
