@@ -26,10 +26,6 @@ Este projeto tem como objetivo extrair dados de uma tabela contida em um PDF, pr
    ```bash
    pip install tabula-py PyPDF2 pandas
 
-## Observações Importantes:
 
-1. Peço desculpas caso haja algum erro no código. Durante o processamento dos dados, ao abrir o arquivo CSV no Python, percebi que a tabela possuía muitas colunas "extras" após a última coluna "Capítulo". Para garantir que a tabela fosse organizada e fácil de manusear, resolvi limitar o número de colunas a **13**.
-
-Que e a ultima coluna da tabela
 
 Obrigado!
